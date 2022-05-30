@@ -1,0 +1,134 @@
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\ALUMNO\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+G:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+E:\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\usuario\Documents\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Curso.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Departamento.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Docente.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Grupo.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Instructor.resources
+C:\Users\USER\Desktop\Ejemplo\conexion\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Temas.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.SuggestedBindingRedirects.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Asistencia.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Curso.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Departamento.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Docente.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Grupo.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.InicioSesion.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Instructor.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Temas.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\CALIPSO\Desktop\test\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.SuggestedBindingRedirects.cache
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Asistencia.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Curso.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Departamento.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Docente.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Grupo.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.InicioSesion.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Instructor.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Temas.resources
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\misae\Desktop\ADMIN\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Asistencia.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Curso.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Departamento.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Docente.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Grupo.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.InicioSesion.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Instructor.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Temas.resources
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\USER\Desktop\AdminDatos\AdminDatos\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.SuggestedBindingRedirects.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.InicioSesion.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Temas.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CopyComplete
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Libros.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Prestamos.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Equipos.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Trabajadores.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Ventas.resources
+C:\Users\CALIPSO\Desktop\test\AdminDatos - Biblioteca Urbana\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Visualizador.resources
