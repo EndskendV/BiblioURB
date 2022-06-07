@@ -21,13 +21,13 @@ namespace WindowsFormsApplication1
         }
 
         //Conexión con la base de datos 
-        SqlConnection conexion = new SqlConnection(@"server=.\SQLEXPRESS; Initial Catalog=next; integrated security=true");
-        string query = "INSERT INTO dbo.Plaza(NamePlaza,TipoPlaza)VALUES(@NamePlaza, @TipoPlaza) SELECT SCOPE_IDENTITY()",
-            query1 = "insert into Departamento (NameDep) values(@NAME) SELECT SCOPE_IDENTITY()";
+        SqlConnection conexion = new SqlConnection(@"server=.\SQLEXPRESS; Initial Catalog=urban; integrated security=true");
+        string query = "INSERT INTO [dbo].[Computadoras] ([Disponible]) VALUES(1)  SELECT SCOPE_IDENTITY()";
 
 
         private void bttn_Regresar_Click(object sender, EventArgs e)
-        {Temas temas = new Temas(); temas.Show();
+        {
+            Temas temas = new Temas(); temas.Show();
 
             this.Dispose();
         }
@@ -39,119 +39,156 @@ namespace WindowsFormsApplication1
         }
         int c = 1;
 
-        private void bttn_Delete_Click(object sender, EventArgs e)
+        private void bttn_Unlock_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Estas Seguro", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
 
-                string Declaracion = "ID Eliminada: " + TXT_ID.Text + "\nNombre: " + TXT_NAME.Text + ". ";
-               
-                conexion.Close();
+                SqlCommand cmd = new SqlCommand(String.Format("SELECT [ID_PC]      ,[Disponible]  FROM[dbo].[Computadoras]"), conexion);
+                conexion.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                try
+                {
+
+                    while (reader.Read())
+                        if (reader.GetInt32(0) == int.Parse(comboBox1.Text))
+                        {
+                            if (reader.GetInt32(1) == 0)
+                            {
+
+                                SqlCommand sqlCommand = new SqlCommand(String.Format("UPDATE [dbo].[Computadoras]   SET[Disponible] = 1 WHERE ID_PC= '{0}'", comboBox1.Text), conexion);
+
+                                cmd.Dispose(); reader.Close();
+                                sqlCommand.ExecuteNonQuery();
+                            }
+                            else MessageBox.Show("El equipo Ya esta desbloqueado");
+
+                        }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Desbloqueada");
+                }
                 Activaciones(1);
+                conexion.Close();
             }
             else if (dialogResult == DialogResult.No)
             {
                 MessageBox.Show("Operacion Cancelada");
             }
         }
-        int x = 0;
-        private void bttn_Modify_Click(object sender, EventArgs e)
+        private void bttn_Locky_Click(object sender, EventArgs e)
         {
-            AcceptButton = bttn_Save;
-            if (c == 1||bttn_Save.Visible==false)
+            SqlCommand cmd = new SqlCommand(String.Format("SELECT [ID_PC]      ,[Disponible]  FROM[dbo].[Computadoras]"), conexion);
+            conexion.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            try
             {
-            Activaciones(2);
-                c= 0;
-            }else if (bttn_Delete.Enabled==false)
-            { MessageBox.Show("Favor seleccionar una ID Valida", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand); }else
-            { MessageBox.Show("Para guardar cambios presione Guardar", "Aviso",MessageBoxButtons.OK,MessageBoxIcon.Hand);}
-            comboBox1.Focus();
+
+                while (reader.Read())
+                    if (reader.GetInt32(0) == int.Parse(comboBox1.Text))
+                    {
+                        if (reader.GetInt32(1)==1)
+                        {
+
+                            SqlCommand sqlCommand = new SqlCommand(String.Format("UPDATE [dbo].[Computadoras]   SET[Disponible] = 0 WHERE ID_PC= '{0}'", comboBox1.Text), conexion);
+
+                            cmd.Dispose(); reader.Close();
+                            sqlCommand.ExecuteNonQuery();
+                        }
+                        else MessageBox.Show("El equipo Ya esta bloqueado");
+
+                    }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Bloqueada");
+            }
+            Activaciones(1);
+            conexion.Close();
+        }
+
+        void ConexionVerifing()
+        {
+            if (conexion.State == ConnectionState.Open)
+            {
+                conexion.Close();
+            }
+            conexion.Open();
         }
         void Activaciones(int OPC)
         {
             switch (OPC)
             {
                 case 0: //INICIO
-                    c = 1;
-                    bttn_Consult.Visible = true;
-                    bttn_Modify.Visible = true;
-                    //bttn_Regresar.Visible = true;
-                    bttn_Save.Visible = true;
+                    bttn_Lock.Visible = true;
+                    bttn_Unlock.Visible=true;
+                    bttn_Select.Visible = true;
+
+
                     break;
-                case 1: //Seleccion Cancelar (CHECKBOX)
-                    if (TXT_ID.Enabled == true)
+                case 1: //Actualizacion
+                    SqlCommand cmd = new SqlCommand(String.Format("SELECT [ID_PC]      ,[Disponible]  FROM[dbo].[Computadoras]"), conexion);
+                    ConexionVerifing();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    DatosR.Rows.Clear();
+                    comboBox1.Items.Clear();
+                    while (reader.Read())
                     {
-                        CheckDelete.Checked = false;
-                        bttn_Delete.Visible = false;
-                        CheckDelete.Visible = false;
-                        bttn_Save.Enabled = true;
-                        TXT_ID.Enabled = false;
-                        TXT_ID.Visible = true;
-                        comboBox1.Visible = false;
-                        c = 1;
+                        comboBox1.Items.Add(reader.GetInt32(0));
+
+                        DataGridViewRow fila = new DataGridViewRow();
+                        fila.CreateCells(DatosR);
+                        fila.Cells[0].Value = reader.GetInt32(0);
+                        fila.Cells[1].Value = reader.GetInt32(1);
+                        DatosR.Rows.Add(fila);
                     }
-                    //Colector ID siguiente
-                    
+                    conexion.Close();
+                    Activaciones(99);
+
 
                     break;
                 case 2://Push Modify
 
-                    TXT_ID.Enabled = true;
-                    CheckDelete.Visible = true;
-                    bttn_Save.Enabled = false;
-                    bttn_Save.Visible = true;
-                    bttn_Delete.Enabled = false;
-                    bttn_Delete.Visible = true;
-                    TXT_ID.Visible = false;
-                    comboBox1.Visible = true;
-                    if (x==0)
-                    {
-                        MessageBox.Show("Ahora puedes Introducir la ID");
-                        x = 1;
-                    }
                     break;
                 case 3://consultar
-                    TXT_ID.Enabled = true;
-                    bttn_Save.Enabled = false;
-                    bttn_Save.Visible = false;
-                    bttn_Delete.Enabled = false;
-                    bttn_Delete.Visible = false;
-                    TXT_ID.Visible = false;
-                    comboBox1.Visible = true;
-                    if (x == 0)
+                    bttn_Select.Visible = true;
+                    bttn_Unlock.Enabled = false;
+                    bttn_Unlock.Visible = true;
+                    break;
+                case 99: //Color celdas
+
+                    for (int i = 0; i < DatosR.RowCount-1; i++)
                     {
-                        MessageBox.Show("Ahora puedes Introducir la ID");
-                        x = 1;
+                        if (DatosR.Rows[i].Cells[1].Value.ToString()=="1")
+                        for (int ii = 0; ii < 2; ii++)
+                        {
+                                DatosR.Rows[i].Cells[ii].Style.BackColor = Color.Red;
+                        }
+                        else for (int ii = 0; ii < 2; ii++)
+                            {
+                                DatosR.Rows[i].Cells[ii].Style.BackColor = Color.GreenYellow;
+                            }
                     }
+                    
                     break;
                 default:
                     break;
             }
         }
 
-        private void CheckDelete_CheckedChanged(object sender, EventArgs e)
-        {
-            if (CheckDelete.Checked==true)
-            {
-                Activaciones(1);
-            }
-        }
-
         private void Departamento_Load(object sender, EventArgs e)
         {
-
+            //Poner para cargar la BD
+            Activaciones(1);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bttn_Delete.Enabled = true;
-            bttn_Save.Enabled = true;
+            bttn_Unlock.Visible = true;
+            bttn_Lock.Visible = true;
 
-            conexion.Open();
-
-
-            conexion.Close();
         }
 
         private void plazaBindingSource_CurrentChanged(object sender, EventArgs e)
@@ -161,7 +198,6 @@ namespace WindowsFormsApplication1
 
         private void bttn_Consult_Click(object sender, EventArgs e)
         {
-            AcceptButton = bttn_Consult;
             Activaciones(3); comboBox1.Focus(); if (c==0)
             {
                 try
@@ -183,18 +219,68 @@ namespace WindowsFormsApplication1
         }
 
 
-        private void bttn_Save_Click(object sender, EventArgs e)
+        private void bttn_Select_Click(object sender, EventArgs e)
         {
-            //Agregar al sistema
-            if (comboBox1.Visible==false)
+            
+            comboBox1.SelectedIndex=DatosR.CurrentRow.Index;
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            comboBox1.SelectedIndex = DatosR.CurrentRow.Index;
+        }
+        int xx=0;
+
+        private void button1_Click(object sender, EventArgs e)
+        {    
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand(query,conexion);
+            
+            xx=Convert.ToInt32(cmd.ExecuteScalar());
+            conexion.Close();
+            comboBox1.Items.Add(xx);
+
+             DataGridViewRow fila = new DataGridViewRow();
+             fila.CreateCells(DatosR);
+             fila.Cells[0].Value = xx;
+             fila.Cells[1].Value = "1";
+             DatosR.Rows.Add(fila);
+            Activaciones(99);
+        }
+
+
+        private void PC_Remove_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Estas Seguro", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
             {
 
-                Activaciones(1);
-            }else
-            {
-                Activaciones(1);
+                string Declaracion = "PC Eliminada: " + DatosR.Rows[DatosR.RowCount-2].Cells[0].Value;
+                conexion.Open();
+                SqlCommand sqlDel = new SqlCommand(String.Format("DELETE FROM Computadoras WHERE ID_PC ='{0}'", DatosR.Rows[DatosR.RowCount - 2].Cells[0].Value), conexion);
+              
+                try
+                {
+                    sqlDel.ExecuteNonQuery();
+                    MessageBox.Show(Declaracion, "Eliminacion completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("No es posible eliminar, ya que otra categoria depende de este elemento", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                }
+                sqlDel.Dispose();
 
+
+                conexion.Close();
+                Activaciones(1);
             }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Operacion Cancelada");
+            }
+            DatosR.Rows.RemoveAt((DatosR.RowCount - 2));
 
         }
     }

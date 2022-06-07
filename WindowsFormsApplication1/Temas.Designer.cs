@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1
             this.bttn_Grupo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bttn_Grupo.Name = "bttn_Grupo";
             this.bttn_Grupo.UseVisualStyleBackColor = true;
-            this.bttn_Grupo.Click += new System.EventHandler(this.bttn_Grupo_Click);
+            this.bttn_Grupo.Click += new System.EventHandler(this.bttn_Ventas_Click);
             // 
             // bttn_Instructor
             // 
@@ -98,7 +98,7 @@ namespace WindowsFormsApplication1
             this.bttn_Instructor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bttn_Instructor.Name = "bttn_Instructor";
             this.bttn_Instructor.UseVisualStyleBackColor = true;
-            this.bttn_Instructor.Click += new System.EventHandler(this.bttn_Instructor_Click);
+            this.bttn_Instructor.Click += new System.EventHandler(this.bttn_IVirtual_Click);
             // 
             // bttn_Docente
             // 
@@ -110,7 +110,7 @@ namespace WindowsFormsApplication1
             this.bttn_Docente.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bttn_Docente.Name = "bttn_Docente";
             this.bttn_Docente.UseVisualStyleBackColor = true;
-            this.bttn_Docente.Click += new System.EventHandler(this.bttn_Docente_Click);
+            this.bttn_Docente.Click += new System.EventHandler(this.bttn_Trabajador_Click);
             // 
             // bttn_Depa
             // 
@@ -134,7 +134,7 @@ namespace WindowsFormsApplication1
             this.bttn_Curso.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bttn_Curso.Name = "bttn_Curso";
             this.bttn_Curso.UseVisualStyleBackColor = true;
-            this.bttn_Curso.Click += new System.EventHandler(this.bttn_Curso_Click);
+            this.bttn_Curso.Click += new System.EventHandler(this.bttn_Libros_Click);
             // 
             // panelLogo
             // 

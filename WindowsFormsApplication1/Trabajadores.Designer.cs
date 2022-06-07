@@ -31,22 +31,21 @@ namespace WindowsFormsApplication1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trabajadores));
             this.CheckDelete = new System.Windows.Forms.CheckBox();
-            this.Combo_IDDocente = new System.Windows.Forms.ComboBox();
-            this.TXT_DocenteName = new System.Windows.Forms.TextBox();
+            this.Combo_ID = new System.Windows.Forms.ComboBox();
+            this.TXT_Name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.TXT_IDPlaza = new System.Windows.Forms.TextBox();
-            this.Combo_PlazaName = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TxT_IDDepartamento = new System.Windows.Forms.TextBox();
-            this.Combo_DepartamentoName = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TXT_IDCurso = new System.Windows.Forms.TextBox();
-            this.Combo_CursoName = new System.Windows.Forms.ComboBox();
             this.bttn_Consult = new FontAwesome.Sharp.IconButton();
             this.bttn_Delete = new FontAwesome.Sharp.IconButton();
             this.bttn_Modify = new FontAwesome.Sharp.IconButton();
             this.bttn_Save = new FontAwesome.Sharp.IconButton();
+            this.TxT_Domicilio = new System.Windows.Forms.TextBox();
+            this.TxT_Mail = new System.Windows.Forms.TextBox();
+            this.TxT_Phone = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Combo_Nac = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // CheckDelete
@@ -62,24 +61,24 @@ namespace WindowsFormsApplication1
             this.CheckDelete.Visible = false;
             this.CheckDelete.CheckedChanged += new System.EventHandler(this.CheckDelete_CheckedChanged);
             // 
-            // Combo_IDDocente
+            // Combo_ID
             // 
-            this.Combo_IDDocente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_IDDocente.FormattingEnabled = true;
-            this.Combo_IDDocente.Location = new System.Drawing.Point(158, 125);
-            this.Combo_IDDocente.MaxLength = 10;
-            this.Combo_IDDocente.Name = "Combo_IDDocente";
-            this.Combo_IDDocente.Size = new System.Drawing.Size(93, 21);
-            this.Combo_IDDocente.TabIndex = 25;
-            this.Combo_IDDocente.SelectedIndexChanged += new System.EventHandler(this.Combo_IDDocente_SelectedIndexChanged);
+            this.Combo_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Combo_ID.FormattingEnabled = true;
+            this.Combo_ID.Location = new System.Drawing.Point(158, 125);
+            this.Combo_ID.MaxLength = 10;
+            this.Combo_ID.Name = "Combo_ID";
+            this.Combo_ID.Size = new System.Drawing.Size(93, 21);
+            this.Combo_ID.TabIndex = 1;
+            this.Combo_ID.SelectedIndexChanged += new System.EventHandler(this.Combo_IDWk_SelectedIndexChanged);
             // 
-            // TXT_DocenteName
+            // TXT_Name
             // 
-            this.TXT_DocenteName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_DocenteName.Location = new System.Drawing.Point(257, 125);
-            this.TXT_DocenteName.Name = "TXT_DocenteName";
-            this.TXT_DocenteName.Size = new System.Drawing.Size(170, 20);
-            this.TXT_DocenteName.TabIndex = 26;
+            this.TXT_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXT_Name.Location = new System.Drawing.Point(257, 125);
+            this.TXT_Name.Name = "TXT_Name";
+            this.TXT_Name.Size = new System.Drawing.Size(170, 20);
+            this.TXT_Name.TabIndex = 2;
             // 
             // label2
             // 
@@ -95,91 +94,31 @@ namespace WindowsFormsApplication1
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 155);
+            this.label3.Location = new System.Drawing.Point(44, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.Size = new System.Drawing.Size(108, 13);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Seleccion de Plaza";
-            // 
-            // TXT_IDPlaza
-            // 
-            this.TXT_IDPlaza.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_IDPlaza.Location = new System.Drawing.Point(342, 151);
-            this.TXT_IDPlaza.Name = "TXT_IDPlaza";
-            this.TXT_IDPlaza.ReadOnly = true;
-            this.TXT_IDPlaza.Size = new System.Drawing.Size(85, 20);
-            this.TXT_IDPlaza.TabIndex = 29;
-            // 
-            // Combo_PlazaName
-            // 
-            this.Combo_PlazaName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_PlazaName.FormattingEnabled = true;
-            this.Combo_PlazaName.Location = new System.Drawing.Point(158, 152);
-            this.Combo_PlazaName.MaxLength = 10;
-            this.Combo_PlazaName.Name = "Combo_PlazaName";
-            this.Combo_PlazaName.Size = new System.Drawing.Size(178, 21);
-            this.Combo_PlazaName.TabIndex = 28;
-            this.Combo_PlazaName.SelectedIndexChanged += new System.EventHandler(this.Combo_PlazaName_SelectedIndexChanged);
+            this.label3.Text = "Fecha de Nacimiento";
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(78, 182);
+            this.label4.Location = new System.Drawing.Point(103, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 33;
-            this.label4.Text = "Departamento";
-            // 
-            // TxT_IDDepartamento
-            // 
-            this.TxT_IDDepartamento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxT_IDDepartamento.Location = new System.Drawing.Point(342, 178);
-            this.TxT_IDDepartamento.Name = "TxT_IDDepartamento";
-            this.TxT_IDDepartamento.ReadOnly = true;
-            this.TxT_IDDepartamento.Size = new System.Drawing.Size(85, 20);
-            this.TxT_IDDepartamento.TabIndex = 32;
-            // 
-            // Combo_DepartamentoName
-            // 
-            this.Combo_DepartamentoName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_DepartamentoName.FormattingEnabled = true;
-            this.Combo_DepartamentoName.Location = new System.Drawing.Point(158, 179);
-            this.Combo_DepartamentoName.MaxLength = 10;
-            this.Combo_DepartamentoName.Name = "Combo_DepartamentoName";
-            this.Combo_DepartamentoName.Size = new System.Drawing.Size(178, 21);
-            this.Combo_DepartamentoName.TabIndex = 31;
-            this.Combo_DepartamentoName.SelectedIndexChanged += new System.EventHandler(this.Combo_DepartamentoName_SelectedIndexChanged);
+            this.label4.Text = "Domicilio";
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(118, 209);
+            this.label5.Location = new System.Drawing.Point(116, 220);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 36;
-            this.label5.Text = "Curso";
-            // 
-            // TXT_IDCurso
-            // 
-            this.TXT_IDCurso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_IDCurso.Location = new System.Drawing.Point(342, 205);
-            this.TXT_IDCurso.Name = "TXT_IDCurso";
-            this.TXT_IDCurso.ReadOnly = true;
-            this.TXT_IDCurso.Size = new System.Drawing.Size(85, 20);
-            this.TXT_IDCurso.TabIndex = 35;
-            // 
-            // Combo_CursoName
-            // 
-            this.Combo_CursoName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_CursoName.FormattingEnabled = true;
-            this.Combo_CursoName.Location = new System.Drawing.Point(158, 206);
-            this.Combo_CursoName.MaxLength = 10;
-            this.Combo_CursoName.Name = "Combo_CursoName";
-            this.Combo_CursoName.Size = new System.Drawing.Size(178, 21);
-            this.Combo_CursoName.TabIndex = 34;
-            this.Combo_CursoName.SelectedIndexChanged += new System.EventHandler(this.Combo_CursoName_SelectedIndexChanged);
+            this.label5.Text = "E-Mail";
             // 
             // bttn_Consult
             // 
@@ -250,27 +189,69 @@ namespace WindowsFormsApplication1
             this.bttn_Save.UseVisualStyleBackColor = true;
             this.bttn_Save.Click += new System.EventHandler(this.bttn_Save_Click);
             // 
+            // TxT_Domicilio
+            // 
+            this.TxT_Domicilio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxT_Domicilio.Location = new System.Drawing.Point(158, 190);
+            this.TxT_Domicilio.Name = "TxT_Domicilio";
+            this.TxT_Domicilio.Size = new System.Drawing.Size(269, 20);
+            this.TxT_Domicilio.TabIndex = 4;
+            // 
+            // TxT_Mail
+            // 
+            this.TxT_Mail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxT_Mail.Location = new System.Drawing.Point(158, 216);
+            this.TxT_Mail.Name = "TxT_Mail";
+            this.TxT_Mail.Size = new System.Drawing.Size(269, 20);
+            this.TxT_Mail.TabIndex = 5;
+            // 
+            // TxT_Phone
+            // 
+            this.TxT_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxT_Phone.Location = new System.Drawing.Point(158, 242);
+            this.TxT_Phone.MaxLength = 10;
+            this.TxT_Phone.Name = "TxT_Phone";
+            this.TxT_Phone.Size = new System.Drawing.Size(118, 20);
+            this.TxT_Phone.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(103, 245);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Telefono";
+            // 
+            // Combo_Nac
+            // 
+            this.Combo_Nac.Location = new System.Drawing.Point(169, 180);
+            this.Combo_Nac.Name = "Combo_Nac";
+            this.Combo_Nac.Size = new System.Drawing.Size(200, 20);
+            this.Combo_Nac.TabIndex = 3;
+            // 
             // Trabajadores
             // 
+            this.AcceptButton = this.bttn_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 384);
+            this.Controls.Add(this.Combo_Nac);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxT_Phone);
+            this.Controls.Add(this.TxT_Mail);
+            this.Controls.Add(this.TxT_Domicilio);
             this.Controls.Add(this.bttn_Consult);
             this.Controls.Add(this.bttn_Delete);
             this.Controls.Add(this.bttn_Modify);
             this.Controls.Add(this.bttn_Save);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TXT_IDCurso);
-            this.Controls.Add(this.Combo_CursoName);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TxT_IDDepartamento);
-            this.Controls.Add(this.Combo_DepartamentoName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TXT_IDPlaza);
-            this.Controls.Add(this.Combo_PlazaName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TXT_DocenteName);
-            this.Controls.Add(this.Combo_IDDocente);
+            this.Controls.Add(this.TXT_Name);
+            this.Controls.Add(this.Combo_ID);
             this.Controls.Add(this.CheckDelete);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Trabajadores";
@@ -283,21 +264,20 @@ namespace WindowsFormsApplication1
 
         #endregion
         private System.Windows.Forms.CheckBox CheckDelete;
-        private System.Windows.Forms.ComboBox Combo_IDDocente;
-        private System.Windows.Forms.TextBox TXT_DocenteName;
+        private System.Windows.Forms.ComboBox Combo_ID;
+        private System.Windows.Forms.TextBox TXT_Name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TXT_IDPlaza;
-        private System.Windows.Forms.ComboBox Combo_PlazaName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxT_IDDepartamento;
-        private System.Windows.Forms.ComboBox Combo_DepartamentoName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TXT_IDCurso;
-        private System.Windows.Forms.ComboBox Combo_CursoName;
         private FontAwesome.Sharp.IconButton bttn_Consult;
         private FontAwesome.Sharp.IconButton bttn_Delete;
         private FontAwesome.Sharp.IconButton bttn_Modify;
         private FontAwesome.Sharp.IconButton bttn_Save;
+        private System.Windows.Forms.TextBox TxT_Domicilio;
+        private System.Windows.Forms.TextBox TxT_Mail;
+        private System.Windows.Forms.TextBox TxT_Phone;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker Combo_Nac;
     }
 }

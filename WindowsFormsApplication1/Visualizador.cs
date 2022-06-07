@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
         }
 
         //Conexión con la base de datos 
-        SqlConnection conexion = new SqlConnection(@"server=.\SQLEXPRESS; Initial Catalog=next; integrated security=true");
+        SqlConnection conexion = new SqlConnection(@"server=.\SQLEXPRESS; Initial Catalog=urban; integrated security=true");
 
         private void bttn_Regresar_Click(object sender, EventArgs e)
         {
@@ -250,7 +250,6 @@ namespace WindowsFormsApplication1
                             MessageBox.Show("No es posible eliminar, ya que otra categoria depende de este elemento", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                         }
                         sqlDel.Dispose();
-                        sqlDel = null;
 
 
                 conexion.Close();

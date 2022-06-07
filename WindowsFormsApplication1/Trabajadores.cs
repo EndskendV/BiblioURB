@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         }
 
         //conexión con la base de datos
-        SqlConnection conexion = new SqlConnection(@"server=.\SQLEXPRESS; Initial Catalog=next; integrated security=true");
+        SqlConnection conexion = new SqlConnection(@"server=.\SQLEXPRESS; Initial Catalog=urban; integrated security=true");
 
         private void bttn_Regresar_Click(object sender, EventArgs e)
         {
@@ -45,43 +45,22 @@ namespace WindowsFormsApplication1
                     bttn_Consult.Visible = true;
                     bttn_Modify.Visible = true;
                     bttn_Modify.Enabled = true;
-                    //bttn_Regresar.Visible = true;
                     bttn_Save.Visible = true;
 
-                    TXT_IDCurso.Enabled = false;
-                    TxT_IDDepartamento.Enabled = false;
-                    TXT_IDPlaza.Enabled = false;
-                    TXT_DocenteName.Enabled = true;
-                    Combo_CursoName.Enabled = true;
-                    Combo_DepartamentoName.Enabled = true;
-                    Combo_IDDocente.Enabled = true;
-                    Combo_PlazaName.Enabled = true;
+                    TXT_Name.Enabled = true;
+                    Combo_ID.Enabled = true;
 
 
                     ConexionVerifing();
-                    SqlCommand ComboFill = new SqlCommand("SELECT NamePlaza from Plaza", conexion);
+                    SqlCommand ComboFill = new SqlCommand("SELECT [ID_Personal] from [Personal]", conexion);
 
                     SqlDataReader reader1 = ComboFill.ExecuteReader();
                     while (reader1.Read())
                     {
-                        Combo_PlazaName.Items.Add(reader1["NamePlaza"].ToString());
+                       // Combo_PlazaName.Items.Add(reader1["NamePlaza"].ToString());
                     }
                     ComboFill.Dispose(); reader1.Close();
-                    
-                    ComboFill = new SqlCommand("SELECT NameDep FROM Departamento",conexion);
-                    SqlDataReader reader2 = ComboFill.ExecuteReader();
-                    while (reader2.Read())
-                    {
-                        Combo_DepartamentoName.Items.Add(reader2["NameDep"].ToString());
-                    }
-                    ComboFill.Dispose (); reader2.Close();
-
-                    ComboFill = new SqlCommand("SELECT NameCurso FROM Curso", conexion);
-                    SqlDataReader reader3=ComboFill.ExecuteReader();
-                    while (reader3.Read())
-                    {
-                        Combo_CursoName.Items.Add(reader3["NameCurso"].ToString());
-                    }
+                
                     conexion.Close();
 
                     break;
@@ -92,19 +71,18 @@ namespace WindowsFormsApplication1
                     CheckDelete.Visible = false;
                     bttn_Save.Enabled = true;
 
-                    Combo_CursoName.Items.Clear();
-                    Combo_DepartamentoName.Items.Clear();
-                    Combo_PlazaName.Items.Clear();
-                    Combo_IDDocente.Items.Clear();
-                    TXT_DocenteName.Text = "";
-                    TXT_IDCurso.Text = "";
-                    TxT_IDDepartamento.Text = "";
-                    TXT_IDPlaza.Text = "";
-                    Combo_PlazaName.Text = "";
-                    Combo_IDDocente.Text = "";
-                    Combo_DepartamentoName.Text = "";
-                    Combo_CursoName.Text = "";
+                    TxT_Mail.Enabled = true;
+                    TxT_Domicilio.Enabled = true;
+                    TXT_Name.Enabled=true;
+                    TxT_Phone.Enabled = true;
+                    Combo_Nac.Enabled = true;
 
+                    Combo_ID.Items.Clear();
+                    TXT_Name.Text = "";
+                    Combo_ID.Text = "";
+                    TxT_Domicilio.Text = "";
+                    TxT_Mail.Text = "";
+                    TxT_Phone.Text = "";
                     Activaciones(0);
 
 
@@ -118,23 +96,21 @@ namespace WindowsFormsApplication1
                     bttn_Delete.Visible = true;
                     bttn_Modify.Enabled = false;
 
-                    TXT_IDCurso.Enabled = false;
-                    TxT_IDDepartamento.Enabled = false;
-                    TXT_IDPlaza.Enabled = false;
-                    TXT_DocenteName.Enabled = true;
-                    Combo_CursoName.Enabled = true;
-                    Combo_DepartamentoName.Enabled = true;
-                    Combo_IDDocente.Enabled = true;
-                    Combo_PlazaName.Enabled = true;
-
+                    TXT_Name.Enabled = true;
+                    Combo_ID.Enabled = true;
+                    TxT_Mail.Enabled = true;
+                    TxT_Domicilio.Enabled = true;
+                    TXT_Name.Enabled = true;
+                    TxT_Phone.Enabled = true;
+                    Combo_Nac.Enabled = true;
                     ConexionVerifing();
-                    Combo_IDDocente.Items.Clear();
-                    SqlCommand cmd = new SqlCommand("Select ID_Docente FROM Docente", conexion);
+                    Combo_ID.Items.Clear();
+                    SqlCommand cmd = new SqlCommand("Select [ID_Personal] FROM [Personal]", conexion);
 
                     SqlDataReader dr1 = cmd.ExecuteReader();
                     while (dr1.Read())
                     {
-                        Combo_IDDocente.Items.Add(dr1["ID_Docente"].ToString());
+                        Combo_ID.Items.Add(dr1["ID_Personal"].ToString());
                     }
                     conexion.Close();
                     if (x == 0)
@@ -151,23 +127,23 @@ namespace WindowsFormsApplication1
                     bttn_Delete.Visible = false;
                     bttn_Modify.Enabled = true;
 
-                    TXT_IDCurso.Enabled = false;
-                    TxT_IDDepartamento.Enabled = false;
-                    TXT_IDPlaza.Enabled = false;
-                    TXT_DocenteName.Enabled = false;
-                    Combo_CursoName.Enabled = false;
-                    Combo_DepartamentoName.Enabled = false;
-                    Combo_PlazaName.Enabled = false;
-                    Combo_IDDocente.Enabled = true;
+
+
+                    TXT_Name.Enabled = false;
+                    Combo_ID.Enabled = true;
+                    TxT_Phone.Enabled = false;
+                    TxT_Domicilio.Enabled = false;
+                    TxT_Mail.Enabled = false;
+                    Combo_Nac.Enabled = false;
 
                     ConexionVerifing();
-                    Combo_IDDocente.Items.Clear();
-                    SqlCommand cmd1 = new SqlCommand("Select ID_Docente FROM Docente", conexion);
+                    Combo_ID.Items.Clear();
+                    SqlCommand cmd1 = new SqlCommand("Select ID_Personal FROM Personal", conexion);
 
                     SqlDataReader dr = cmd1.ExecuteReader();
                     while (dr.Read())
                     {
-                        Combo_IDDocente.Items.Add(dr["ID_Docente"].ToString());
+                        Combo_ID.Items.Add(dr["ID_Personal"].ToString());
                     }
                     conexion.Close();
                     if (x == 0)
@@ -205,16 +181,19 @@ namespace WindowsFormsApplication1
             switch (bttn_Modify.Enabled)
             {
                 case true:
-                    try
+                 try
                     {
                         ConexionVerifing();
-                        SqlCommand alta = new SqlCommand(String.Format("INSERT INTO [dbo].[Docente] ([ID_Docente],[ID_Plaza],[ID_Dep],[NameDocente],[ID_Curso]) VALUES ('{0}','{1}','{2}','{3}','{4}')", Combo_IDDocente.Text, TXT_IDPlaza.Text, TxT_IDDepartamento.Text, TXT_DocenteName.Text, TXT_IDCurso.Text), conexion);
+                        DateTime dateTime= Convert.ToDateTime(Combo_Nac.Value.Date.ToString("dd-MM-yyyy"));
+                        SqlCommand alta = new SqlCommand(String.Format("INSERT INTO[dbo].[Personal] ([NameP],[FechNacimiento],[DomicilioP],[MailP],[TelefonoP]) VALUES('{0}',@FechaNac,'{1}','{2}','{3}')", TXT_Name.Text, TxT_Domicilio.Text, TxT_Mail.Text, TxT_Phone.Text), conexion);
+                        alta.Parameters.AddWithValue("@FechaNac", dateTime);
+                        
                         alta.ExecuteNonQuery();
-                        MessageBox.Show("Se ha registrado " + TXT_DocenteName.Text, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se ha registrado " + TXT_Name.Text, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Activaciones(1);
 
                     }
-                    catch (Exception)
+                  catch (Exception)
                     {
                         MessageBox.Show("Verifique los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -222,10 +201,13 @@ namespace WindowsFormsApplication1
                     case false:
                     try
                     {
+
+                        DateTime dateTime = Convert.ToDateTime(Combo_Nac.Value.Date.ToString("dd-MM-yyyy"));
                         ConexionVerifing();
-                        SqlCommand mod = new SqlCommand(String.Format("UPDATE[dbo].[Docente] SET[ID_Plaza] = '{0}',[ID_Dep] = '{1}',[NameDocente] = '{2}',[ID_Curso] = '{3}' WHERE[ID_Docente] = '{4}'", TXT_IDPlaza.Text, TxT_IDDepartamento.Text, TXT_DocenteName.Text, TXT_IDCurso.Text, Combo_IDDocente.SelectedItem.ToString()), conexion);
+                        SqlCommand mod = new SqlCommand(String.Format("UPDATE [dbo].[Personal] SET[NameP] = '{0}',[FechNacimiento] = @FechaNac,[DomicilioP] = '{1}',[MailP] = '{2}',[TelefonoP] = '{3}' WHERE [ID_Personal]='{4}' ", TXT_Name.Text, TxT_Domicilio.Text, TxT_Mail.Text, TxT_Phone.Text, Combo_ID.Text), conexion); 
+                        mod.Parameters.AddWithValue("@FechaNac",dateTime);
                         mod.ExecuteNonQuery();
-                        MessageBox.Show("Se ha Modificado la ID: " + Combo_IDDocente.Text, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se ha Modificado la ID: " + Combo_ID.Text, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception)
                     {
@@ -235,84 +217,24 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void Combo_IDDocente_SelectedIndexChanged(object sender, EventArgs e)
+        private void Combo_IDWk_SelectedIndexChanged(object sender, EventArgs e)
         {
             bttn_Delete.Enabled = true; 
             bttn_Save.Enabled = true;
             ConexionVerifing();
 
-            SqlCommand TXTfill = new SqlCommand(String.Format("Select ID_Plaza,ID_Dep,ID_Curso,NameDocente from Docente WHERE ID_Docente='{0}'", Combo_IDDocente.SelectedItem.ToString()), conexion);
+            SqlCommand TXTfill = new SqlCommand(String.Format("SELECT [NameP],[FechNacimiento],[DomicilioP],[MailP],[TelefonoP] FROM[dbo].[Personal] WHERE [ID_Personal]='{0}'", Combo_ID.SelectedItem.ToString()), conexion);
             SqlDataReader reader = TXTfill.ExecuteReader();
             if (reader.Read())
             {
-                TXT_IDPlaza.Text = reader.GetInt32(0).ToString();
-                TxT_IDDepartamento.Text = reader.GetInt32(1).ToString();
-                TXT_IDCurso.Text = reader.GetString(2);
-                TXT_DocenteName.Text = reader.GetString(3);
+                TXT_Name.Text = reader["NameP"].ToString();
+                Combo_Nac.Text = reader["FechNacimiento"].ToString();
+                TxT_Domicilio.Text = reader.GetString(2);
+                TxT_Mail.Text = reader.GetString(3);
+                TxT_Phone.Text = reader.GetString(4);
             }
             TXTfill.Dispose(); reader.Close();
-            SqlCommand ComboFill = new SqlCommand(String.Format("SELECT NamePlaza from Plaza WHERE ID_Plaza='{0}'",TXT_IDPlaza.Text), conexion);
-
-            SqlDataReader reader1 = ComboFill.ExecuteReader();
-            if (reader1.Read())
-            {
-                Combo_PlazaName.Text = reader1.GetString(0);
-            }
-            ComboFill.Dispose(); reader1.Close();
-            ConexionVerifing();
-            ComboFill = new SqlCommand(String.Format("SELECT NameDep FROM Departamento WHERE ID_Dep='{0}'",TxT_IDDepartamento.Text), conexion);
-            SqlDataReader reader2 = ComboFill.ExecuteReader();
-            if (reader2.Read())
-            {
-                Combo_DepartamentoName.Text = reader2.GetString(0);
-            }
-            ComboFill.Dispose(); reader2.Close();
-            ConexionVerifing();
-            ComboFill = new SqlCommand(String.Format("SELECT NameCurso FROM Curso WHERE ID_Curso= '{0}'",TXT_IDCurso.Text), conexion);
-            SqlDataReader reader3 = ComboFill.ExecuteReader();
-            if (reader3.Read())
-            {
-                Combo_CursoName.Text=reader3.GetString(0);
-            }
             conexion.Close();
-        }
-
-        private void Combo_PlazaName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ConexionVerifing();
-            SqlCommand sql = new SqlCommand(String.Format("SELECT ID_Plaza from Plaza WHERE NamePlaza= '{0}'",Combo_PlazaName.Text),conexion);
-            SqlDataReader reader = sql.ExecuteReader();
-            if (reader.Read())
-            {
-                TXT_IDPlaza.Text=reader.GetInt32(0).ToString();
-            }
-            conexion.Close();
-        }
-
-        private void Combo_DepartamentoName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ConexionVerifing();
-            SqlCommand sql = new SqlCommand(String.Format("SELECT ID_Dep from Departamento WHERE NameDep= '{0}'", Combo_DepartamentoName.Text), conexion);
-            SqlDataReader reader = sql.ExecuteReader();
-            if (reader.Read())
-            {
-                TxT_IDDepartamento.Text = reader.GetInt32(0).ToString();
-            }
-            conexion.Close();
-
-        }
-
-        private void Combo_CursoName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ConexionVerifing();
-            SqlCommand sql = new SqlCommand(String.Format("SELECT ID_Curso from Curso WHERE NameCurso= '{0}'", Combo_CursoName.Text), conexion);
-            SqlDataReader reader = sql.ExecuteReader();
-            if (reader.Read())
-            {
-                TXT_IDCurso.Text = reader.GetString(0);
-            }
-            conexion.Close();
-
         }
 
         private void bttn_Delete_Click(object sender, EventArgs e)
@@ -323,9 +245,9 @@ namespace WindowsFormsApplication1
                 ConexionVerifing();
                 try
                 {
-                    SqlCommand sqlCommand = new SqlCommand(String.Format("DELETE FROM [dbo].[Docente] WHERE [ID_Docente] = '{0}'", Combo_IDDocente.SelectedItem.ToString()), conexion);
+                    SqlCommand sqlCommand = new SqlCommand(String.Format("DELETE FROM [dbo].[Personal] WHERE [ID_Personal] = '{0}'", Combo_ID.SelectedItem.ToString()), conexion);
                     sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Se ha eliminado el Docente.", "Eliminacion completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Se ha eliminado el Trabajador.", "Eliminacion completa", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 catch (Exception)

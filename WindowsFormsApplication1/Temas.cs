@@ -125,7 +125,7 @@ namespace WindowsFormsApplication1
             bttn_Depa.Focus();*/
         }
 
-        private void bttn_Curso_Click(object sender, EventArgs e)
+        private void bttn_Libros_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Libros());
@@ -134,7 +134,7 @@ namespace WindowsFormsApplication1
             bttn_Curso.Focus();*/
         }
 
-        private void bttn_Docente_Click(object sender, EventArgs e)
+        private void bttn_Trabajador_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new Trabajadores());
@@ -143,7 +143,7 @@ namespace WindowsFormsApplication1
             bttn_Docente.Focus();*/
         }
 
-        private void bttn_Instructor_Click(object sender, EventArgs e)
+        private void bttn_IVirtual_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new Visualizador());
@@ -152,7 +152,7 @@ namespace WindowsFormsApplication1
             bttn_Instructor.Focus();*/
         }
 
-        private void bttn_Grupo_Click(object sender, EventArgs e)
+        private void bttn_Ventas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Ventas());

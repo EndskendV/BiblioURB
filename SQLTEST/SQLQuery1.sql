@@ -7,7 +7,7 @@ NameP nvarchar (50) not null,
 FechNacimiento datetime not null,
 DomicilioP nvarchar(100) not null,
 MailP nvarchar (100) not null,
-TelefonoP int not null)
+TelefonoP nvarchar(10) not null)
 
 create table Libros(
 ID_Book int identity(1,1) primary key,
@@ -23,17 +23,11 @@ ID_PC int identity(0,1)primary key,
 Disponible int not null)
 
 create table Ventas(
-ID_Book int not null,
+ID_Book int primary key,
 foreign key(ID_Book) references Libros(ID_Book),
-EstadoSell int primary key,
+EstadoLibro int not null,
 ID_Personal int,
 foreign key(ID_Personal) references Personal(ID_Personal),
 Precio float)
 
-create table Prestamos(
-EstadoPrestamo int primary key,
-ID_Book int not null,
-foreign key(ID_Book) references Libros(ID_Book),
-ID_Personal int not null,
-foreign key(ID_Personal) references Personal(ID_Personal))
 

@@ -34,30 +34,32 @@ namespace WindowsFormsApplication1
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.CheckDelete = new System.Windows.Forms.CheckBox();
-            this.TXT_Lugar = new System.Windows.Forms.TextBox();
-            this.Combo_InstructorID = new System.Windows.Forms.ComboBox();
-            this.TXT_InstructorName = new System.Windows.Forms.TextBox();
-            this.TXT_IDCurso = new System.Windows.Forms.TextBox();
-            this.Combo_Curso = new System.Windows.Forms.ComboBox();
-            this.TXT_Horario = new System.Windows.Forms.TextBox();
+            this.TXT_EditorialLibro = new System.Windows.Forms.TextBox();
+            this.TXT_LibroName = new System.Windows.Forms.TextBox();
+            this.Combo_Libro = new System.Windows.Forms.ComboBox();
+            this.TXT_AutorLibro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Combo_TipoCurso = new System.Windows.Forms.ComboBox();
+            this.Combo_TemasLibros = new System.Windows.Forms.ComboBox();
             this.bttn_Save = new FontAwesome.Sharp.IconButton();
             this.bttn_Modify = new FontAwesome.Sharp.IconButton();
             this.bttn_Delete = new FontAwesome.Sharp.IconButton();
             this.bttn_Consult = new FontAwesome.Sharp.IconButton();
+            this.txt_PrecioLibro = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Combo_fechaPublic = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(147, 142);
+            this.label1.Location = new System.Drawing.Point(156, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Horario:";
+            this.label1.Text = "Autor:";
             // 
             // label2
             // 
@@ -65,19 +67,19 @@ namespace WindowsFormsApplication1
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(154, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Lugar:";
+            this.label2.Text = "Editorial:";
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 191);
+            this.label3.Location = new System.Drawing.Point(149, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Tipo de curso:";
+            this.label3.Text = "Temas:";
             // 
             // CheckDelete
             // 
@@ -92,95 +94,82 @@ namespace WindowsFormsApplication1
             this.CheckDelete.Visible = false;
             this.CheckDelete.CheckedChanged += new System.EventHandler(this.CheckDelete_CheckedChanged);
             // 
-            // TXT_Lugar
+            // TXT_EditorialLibro
             // 
-            this.TXT_Lugar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_Lugar.Location = new System.Drawing.Point(197, 162);
-            this.TXT_Lugar.MaxLength = 100;
-            this.TXT_Lugar.Name = "TXT_Lugar";
-            this.TXT_Lugar.Size = new System.Drawing.Size(186, 20);
-            this.TXT_Lugar.TabIndex = 27;
-            this.TXT_Lugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TXT_EditorialLibro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXT_EditorialLibro.Location = new System.Drawing.Point(197, 162);
+            this.TXT_EditorialLibro.MaxLength = 100;
+            this.TXT_EditorialLibro.Name = "TXT_EditorialLibro";
+            this.TXT_EditorialLibro.Size = new System.Drawing.Size(186, 20);
+            this.TXT_EditorialLibro.TabIndex = 4;
             // 
-            // Combo_InstructorID
+            // TXT_LibroName
             // 
-            this.Combo_InstructorID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_InstructorID.FormattingEnabled = true;
-            this.Combo_InstructorID.Location = new System.Drawing.Point(197, 109);
-            this.Combo_InstructorID.Name = "Combo_InstructorID";
-            this.Combo_InstructorID.Size = new System.Drawing.Size(87, 21);
-            this.Combo_InstructorID.TabIndex = 28;
-            this.Combo_InstructorID.SelectedIndexChanged += new System.EventHandler(this.Combo_InstructorID_SelectedIndexChanged);
+            this.TXT_LibroName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXT_LibroName.Enabled = false;
+            this.TXT_LibroName.Location = new System.Drawing.Point(197, 109);
+            this.TXT_LibroName.MaxLength = 100;
+            this.TXT_LibroName.Name = "TXT_LibroName";
+            this.TXT_LibroName.Size = new System.Drawing.Size(186, 20);
+            this.TXT_LibroName.TabIndex = 2;
             // 
-            // TXT_InstructorName
+            // Combo_Libro
             // 
-            this.TXT_InstructorName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_InstructorName.Enabled = false;
-            this.TXT_InstructorName.Location = new System.Drawing.Point(291, 109);
-            this.TXT_InstructorName.MaxLength = 100;
-            this.TXT_InstructorName.Name = "TXT_InstructorName";
-            this.TXT_InstructorName.Size = new System.Drawing.Size(163, 20);
-            this.TXT_InstructorName.TabIndex = 29;
+            this.Combo_Libro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Combo_Libro.FormattingEnabled = true;
+            this.Combo_Libro.Location = new System.Drawing.Point(197, 82);
+            this.Combo_Libro.Name = "Combo_Libro";
+            this.Combo_Libro.Size = new System.Drawing.Size(186, 21);
+            this.Combo_Libro.TabIndex = 1;
+            this.Combo_Libro.SelectedIndexChanged += new System.EventHandler(this.Combo_Curso_SelectedIndexChanged);
             // 
-            // TXT_IDCurso
+            // TXT_AutorLibro
             // 
-            this.TXT_IDCurso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_IDCurso.Location = new System.Drawing.Point(197, 82);
-            this.TXT_IDCurso.MaxLength = 10;
-            this.TXT_IDCurso.Name = "TXT_IDCurso";
-            this.TXT_IDCurso.Size = new System.Drawing.Size(87, 20);
-            this.TXT_IDCurso.TabIndex = 30;
-            // 
-            // Combo_Curso
-            // 
-            this.Combo_Curso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_Curso.FormattingEnabled = true;
-            this.Combo_Curso.Location = new System.Drawing.Point(291, 82);
-            this.Combo_Curso.Name = "Combo_Curso";
-            this.Combo_Curso.Size = new System.Drawing.Size(163, 21);
-            this.Combo_Curso.TabIndex = 32;
-            this.Combo_Curso.SelectedIndexChanged += new System.EventHandler(this.Combo_Curso_SelectedIndexChanged);
-            // 
-            // TXT_Horario
-            // 
-            this.TXT_Horario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXT_Horario.Location = new System.Drawing.Point(197, 136);
-            this.TXT_Horario.Name = "TXT_Horario";
-            this.TXT_Horario.Size = new System.Drawing.Size(186, 20);
-            this.TXT_Horario.TabIndex = 33;
-            this.TXT_Horario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TXT_AutorLibro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXT_AutorLibro.Location = new System.Drawing.Point(197, 136);
+            this.TXT_AutorLibro.Name = "TXT_AutorLibro";
+            this.TXT_AutorLibro.Size = new System.Drawing.Size(186, 20);
+            this.TXT_AutorLibro.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(137, 113);
+            this.label4.Location = new System.Drawing.Point(149, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 34;
-            this.label4.Text = "Instructor:";
+            this.label4.Text = "Nombre:";
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(154, 85);
+            this.label5.Location = new System.Drawing.Point(158, 86);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
+            this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 35;
-            this.label5.Text = "Curso:";
+            this.label5.Text = "Libro:";
             // 
-            // Combo_TipoCurso
+            // Combo_TemasLibros
             // 
-            this.Combo_TipoCurso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Combo_TipoCurso.FormattingEnabled = true;
-            this.Combo_TipoCurso.Items.AddRange(new object[] {
-            "Clase en linea",
-            "Clase presencial"});
-            this.Combo_TipoCurso.Location = new System.Drawing.Point(197, 188);
-            this.Combo_TipoCurso.Name = "Combo_TipoCurso";
-            this.Combo_TipoCurso.Size = new System.Drawing.Size(186, 21);
-            this.Combo_TipoCurso.TabIndex = 36;
+            this.Combo_TemasLibros.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Combo_TemasLibros.FormattingEnabled = true;
+            this.Combo_TemasLibros.Items.AddRange(new object[] {
+            "Literatura",
+            "Comic y fantasia",
+            "Infantil",
+            "Juvenil",
+            "Conocimiento y Ciencia",
+            "Actualidad y Empresa",
+            "Bienestar y salud",
+            "Cocina y Gastronomia",
+            "Viajes y ocio",
+            "Agendas y Calendarios"});
+            this.Combo_TemasLibros.Location = new System.Drawing.Point(197, 188);
+            this.Combo_TemasLibros.Name = "Combo_TemasLibros";
+            this.Combo_TemasLibros.Size = new System.Drawing.Size(186, 21);
+            this.Combo_TemasLibros.TabIndex = 5;
             // 
             // bttn_Save
             // 
@@ -251,24 +240,63 @@ namespace WindowsFormsApplication1
             this.bttn_Consult.UseVisualStyleBackColor = true;
             this.bttn_Consult.Click += new System.EventHandler(this.bttn_Consult_Click);
             // 
+            // txt_PrecioLibro
+            // 
+            this.txt_PrecioLibro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_PrecioLibro.Location = new System.Drawing.Point(197, 241);
+            this.txt_PrecioLibro.MaxLength = 100;
+            this.txt_PrecioLibro.Name = "txt_PrecioLibro";
+            this.txt_PrecioLibro.Size = new System.Drawing.Size(186, 20);
+            this.txt_PrecioLibro.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(154, 244);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Precio: ";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(81, 221);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(116, 13);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Fecha de Publicacion: ";
+            // 
+            // Combo_fechaPublic
+            // 
+            this.Combo_fechaPublic.Location = new System.Drawing.Point(204, 235);
+            this.Combo_fechaPublic.Name = "Combo_fechaPublic";
+            this.Combo_fechaPublic.Size = new System.Drawing.Size(200, 20);
+            this.Combo_fechaPublic.TabIndex = 6;
+            // 
             // Libros
             // 
+            this.AcceptButton = this.bttn_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 384);
+            this.Controls.Add(this.Combo_fechaPublic);
+            this.Controls.Add(this.txt_PrecioLibro);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.bttn_Consult);
             this.Controls.Add(this.bttn_Delete);
             this.Controls.Add(this.bttn_Modify);
             this.Controls.Add(this.bttn_Save);
-            this.Controls.Add(this.Combo_TipoCurso);
+            this.Controls.Add(this.Combo_TemasLibros);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TXT_Horario);
-            this.Controls.Add(this.Combo_Curso);
-            this.Controls.Add(this.TXT_IDCurso);
-            this.Controls.Add(this.TXT_InstructorName);
-            this.Controls.Add(this.Combo_InstructorID);
-            this.Controls.Add(this.TXT_Lugar);
+            this.Controls.Add(this.TXT_AutorLibro);
+            this.Controls.Add(this.Combo_Libro);
+            this.Controls.Add(this.TXT_LibroName);
+            this.Controls.Add(this.TXT_EditorialLibro);
             this.Controls.Add(this.CheckDelete);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -287,18 +315,20 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox CheckDelete;
-        private System.Windows.Forms.TextBox TXT_Lugar;
-        private System.Windows.Forms.ComboBox Combo_InstructorID;
-        private System.Windows.Forms.TextBox TXT_InstructorName;
-        private System.Windows.Forms.TextBox TXT_IDCurso;
-        private System.Windows.Forms.ComboBox Combo_Curso;
-        private System.Windows.Forms.TextBox TXT_Horario;
+        private System.Windows.Forms.TextBox TXT_EditorialLibro;
+        private System.Windows.Forms.TextBox TXT_LibroName;
+        private System.Windows.Forms.ComboBox Combo_Libro;
+        private System.Windows.Forms.TextBox TXT_AutorLibro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox Combo_TipoCurso;
+        private System.Windows.Forms.ComboBox Combo_TemasLibros;
         private FontAwesome.Sharp.IconButton bttn_Save;
         private FontAwesome.Sharp.IconButton bttn_Modify;
         private FontAwesome.Sharp.IconButton bttn_Delete;
         private FontAwesome.Sharp.IconButton bttn_Consult;
+        private System.Windows.Forms.TextBox txt_PrecioLibro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker Combo_fechaPublic;
     }
 }
