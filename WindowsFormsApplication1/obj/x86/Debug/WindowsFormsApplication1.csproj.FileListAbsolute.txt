@@ -138,7 +138,6 @@ C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\W
 C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Libros.resources
 C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Equipos.resources
 C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Trabajadores.resources
-C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Ventas.resources
 C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.InicioSesion.resources
 C:\Users\CALIPSO\Desktop\test\BiblioURB\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Visualizador.resources

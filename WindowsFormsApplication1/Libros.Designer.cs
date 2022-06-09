@@ -271,9 +271,10 @@ namespace WindowsFormsApplication1
             // 
             // Combo_fechaPublic
             // 
-            this.Combo_fechaPublic.Location = new System.Drawing.Point(204, 235);
+            this.Combo_fechaPublic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Combo_fechaPublic.Location = new System.Drawing.Point(197, 214);
             this.Combo_fechaPublic.Name = "Combo_fechaPublic";
-            this.Combo_fechaPublic.Size = new System.Drawing.Size(200, 20);
+            this.Combo_fechaPublic.Size = new System.Drawing.Size(202, 20);
             this.Combo_fechaPublic.TabIndex = 6;
             // 
             // Libros

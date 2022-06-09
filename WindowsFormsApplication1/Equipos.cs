@@ -178,7 +178,7 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void Departamento_Load(object sender, EventArgs e)
+        private void Equipo_Load(object sender, EventArgs e)
         {
             //Poner para cargar la BD
             Activaciones(1);
@@ -191,10 +191,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void plazaBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void bttn_Consult_Click(object sender, EventArgs e)
         {
@@ -233,7 +229,7 @@ namespace WindowsFormsApplication1
         }
         int xx=0;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AñadirPc_Click(object sender, EventArgs e)
         {    
             conexion.Open();
             SqlCommand cmd = new SqlCommand(query,conexion);

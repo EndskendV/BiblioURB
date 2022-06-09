@@ -226,7 +226,8 @@ namespace WindowsFormsApplication1
             // 
             // Combo_Nac
             // 
-            this.Combo_Nac.Location = new System.Drawing.Point(169, 180);
+            this.Combo_Nac.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Combo_Nac.Location = new System.Drawing.Point(158, 159);
             this.Combo_Nac.Name = "Combo_Nac";
             this.Combo_Nac.Size = new System.Drawing.Size(200, 20);
             this.Combo_Nac.TabIndex = 3;

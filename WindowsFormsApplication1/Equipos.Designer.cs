@@ -33,7 +33,6 @@ namespace WindowsFormsApplication1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Equipos));
             this.lbl_ID = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.plazaTableAdapter = new WindowsFormsApplication1.SchoolDataSetTableAdapters.PlazaTableAdapter();
             this.schoolDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bttn_Unlock = new FontAwesome.Sharp.IconButton();
             this.bttn_Lock = new FontAwesome.Sharp.IconButton();
@@ -51,7 +50,7 @@ namespace WindowsFormsApplication1
             // 
             this.lbl_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_ID.AutoSize = true;
-            this.lbl_ID.Location = new System.Drawing.Point(21, 119);
+            this.lbl_ID.Location = new System.Drawing.Point(33, 131);
             this.lbl_ID.Name = "lbl_ID";
             this.lbl_ID.Size = new System.Drawing.Size(21, 13);
             this.lbl_ID.TabIndex = 12;
@@ -62,7 +61,7 @@ namespace WindowsFormsApplication1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(92, 116);
+            this.comboBox1.Location = new System.Drawing.Point(104, 128);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(98, 21);
             this.comboBox1.TabIndex = 20;
@@ -71,7 +70,6 @@ namespace WindowsFormsApplication1
             // 
             // plazaTableAdapter
             // 
-            this.plazaTableAdapter.ClearBeforeFill = true;
             // 
             // bttn_Unlock
             // 
@@ -81,7 +79,7 @@ namespace WindowsFormsApplication1
             this.bttn_Unlock.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bttn_Unlock.IconSize = 22;
             this.bttn_Unlock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bttn_Unlock.Location = new System.Drawing.Point(495, 211);
+            this.bttn_Unlock.Location = new System.Drawing.Point(342, 260);
             this.bttn_Unlock.Name = "bttn_Unlock";
             this.bttn_Unlock.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.bttn_Unlock.Size = new System.Drawing.Size(144, 43);
@@ -99,7 +97,7 @@ namespace WindowsFormsApplication1
             this.bttn_Lock.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bttn_Lock.IconSize = 20;
             this.bttn_Lock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bttn_Lock.Location = new System.Drawing.Point(495, 165);
+            this.bttn_Lock.Location = new System.Drawing.Point(342, 214);
             this.bttn_Lock.Name = "bttn_Lock";
             this.bttn_Lock.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.bttn_Lock.Size = new System.Drawing.Size(144, 43);
@@ -117,7 +115,7 @@ namespace WindowsFormsApplication1
             this.bttn_Select.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.bttn_Select.IconSize = 20;
             this.bttn_Select.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bttn_Select.Location = new System.Drawing.Point(495, 116);
+            this.bttn_Select.Location = new System.Drawing.Point(342, 165);
             this.bttn_Select.Name = "bttn_Select";
             this.bttn_Select.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.bttn_Select.Size = new System.Drawing.Size(144, 43);
@@ -128,11 +126,12 @@ namespace WindowsFormsApplication1
             // 
             // DatosR
             // 
+            this.DatosR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DatosR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosR.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.DatosR.Location = new System.Drawing.Point(24, 165);
+            this.DatosR.Location = new System.Drawing.Point(12, 165);
             this.DatosR.Name = "DatosR";
             this.DatosR.ReadOnly = true;
             this.DatosR.Size = new System.Drawing.Size(267, 207);
@@ -155,17 +154,19 @@ namespace WindowsFormsApplication1
             // 
             // PC_add
             // 
-            this.PC_add.Location = new System.Drawing.Point(0, 0);
+            this.PC_add.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PC_add.Location = new System.Drawing.Point(12, 12);
             this.PC_add.Name = "PC_add";
             this.PC_add.Size = new System.Drawing.Size(75, 23);
             this.PC_add.TabIndex = 46;
             this.PC_add.Text = "Añadir PC";
             this.PC_add.UseVisualStyleBackColor = true;
-            this.PC_add.Click += new System.EventHandler(this.button1_Click);
+            this.PC_add.Click += new System.EventHandler(this.AñadirPc_Click);
             // 
             // PC_Remove
             // 
-            this.PC_Remove.Location = new System.Drawing.Point(92, 0);
+            this.PC_Remove.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PC_Remove.Location = new System.Drawing.Point(104, 12);
             this.PC_Remove.Name = "PC_Remove";
             this.PC_Remove.Size = new System.Drawing.Size(75, 23);
             this.PC_Remove.TabIndex = 47;
@@ -177,7 +178,7 @@ namespace WindowsFormsApplication1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 384);
+            this.ClientSize = new System.Drawing.Size(819, 384);
             this.Controls.Add(this.PC_Remove);
             this.Controls.Add(this.PC_add);
             this.Controls.Add(this.DatosR);
@@ -190,7 +191,7 @@ namespace WindowsFormsApplication1
             this.Name = "Equipos";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Equipos";
-            this.Load += new System.EventHandler(this.Departamento_Load);
+            this.Load += new System.EventHandler(this.Equipo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.schoolDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosR)).EndInit();
             this.ResumeLayout(false);
@@ -201,7 +202,6 @@ namespace WindowsFormsApplication1
         #endregion
         private System.Windows.Forms.Label lbl_ID;
         private System.Windows.Forms.ComboBox comboBox1;
-        private SchoolDataSetTableAdapters.PlazaTableAdapter plazaTableAdapter;
         private System.Windows.Forms.BindingSource schoolDataSet1BindingSource;
         private FontAwesome.Sharp.IconButton bttn_Unlock;
         private FontAwesome.Sharp.IconButton bttn_Lock;

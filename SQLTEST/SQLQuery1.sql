@@ -28,6 +28,10 @@ foreign key(ID_Book) references Libros(ID_Book),
 EstadoLibro int not null,
 ID_Personal int,
 foreign key(ID_Personal) references Personal(ID_Personal),
-Precio float)
+Precio float,
+FechaAdq varchar (100),
+TelefonoAdq varchar (100) ,
+NombreAdq varchar (100) ,
+)
 
 
