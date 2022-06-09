@@ -29,11 +29,9 @@ namespace WindowsFormsApplication1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Equipos));
             this.lbl_ID = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.schoolDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bttn_Unlock = new FontAwesome.Sharp.IconButton();
             this.bttn_Lock = new FontAwesome.Sharp.IconButton();
             this.bttn_Select = new FontAwesome.Sharp.IconButton();
@@ -42,7 +40,6 @@ namespace WindowsFormsApplication1
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PC_add = new System.Windows.Forms.Button();
             this.PC_Remove = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.schoolDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosR)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,9 +64,6 @@ namespace WindowsFormsApplication1
             this.comboBox1.TabIndex = 20;
             this.comboBox1.Text = "ID\'s Disponibles";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // plazaTableAdapter
-            // 
             // 
             // bttn_Unlock
             // 
@@ -192,7 +186,6 @@ namespace WindowsFormsApplication1
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Equipos";
             this.Load += new System.EventHandler(this.Equipo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.schoolDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,7 +195,6 @@ namespace WindowsFormsApplication1
         #endregion
         private System.Windows.Forms.Label lbl_ID;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.BindingSource schoolDataSet1BindingSource;
         private FontAwesome.Sharp.IconButton bttn_Unlock;
         private FontAwesome.Sharp.IconButton bttn_Lock;
         private FontAwesome.Sharp.IconButton bttn_Select;

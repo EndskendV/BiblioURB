@@ -74,6 +74,11 @@
     <Compile Include="Equipos.Designer.cs">
       <DependentUpon>Equipos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Trabajadores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,14 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Temas.resx">
       <DependentUpon>Temas.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,19 +153,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\grafica asistencia.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\grafic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-pie-chart-clip-art-nudge-accounting-5b1893e0de48c6.1957165815283373769105.png" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guardar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

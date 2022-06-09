@@ -59,46 +59,5 @@ namespace WindowsFormsApplication1.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap grafic {
-            get {
-                object obj = ResourceManager.GetObject("grafic", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap grafica_asistencia {
-            get {
-                object obj = ResourceManager.GetObject("grafica asistencia", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap guardar {
-            get {
-                object obj = ResourceManager.GetObject("guardar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap kisspng_pie_chart_clip_art_nudge_accounting_5b1893e0de48c6_1957165815283373769105 {
-            get {
-                object obj = ResourceManager.GetObject("kisspng-pie-chart-clip-art-nudge-accounting-5b1893e0de48c6.1957165815283373769105" +
-                        "", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

@@ -222,18 +222,28 @@ namespace WindowsFormsApplication1
             bttn_Delete.Enabled = true; 
             bttn_Save.Enabled = true;
             ConexionVerifing();
-
-            SqlCommand TXTfill = new SqlCommand(String.Format("SELECT [NameP],[FechNacimiento],[DomicilioP],[MailP],[TelefonoP] FROM[dbo].[Personal] WHERE [ID_Personal]='{0}'", Combo_ID.SelectedItem.ToString()), conexion);
-            SqlDataReader reader = TXTfill.ExecuteReader();
-            if (reader.Read())
+            try
             {
-                TXT_Name.Text = reader["NameP"].ToString();
-                Combo_Nac.Text = reader["FechNacimiento"].ToString();
-                TxT_Domicilio.Text = reader.GetString(2);
-                TxT_Mail.Text = reader.GetString(3);
-                TxT_Phone.Text = reader.GetString(4);
+                SqlCommand TXTfill = new SqlCommand(String.Format("SELECT [NameP],[FechNacimiento],[DomicilioP],[MailP],[TelefonoP] FROM[dbo].[Personal] WHERE [ID_Personal]='{0}'", Combo_ID.SelectedItem.ToString()), conexion);
+
+                SqlDataReader reader = TXTfill.ExecuteReader();
+                if (reader.Read())
+                {
+                    TXT_Name.Text = reader["NameP"].ToString();
+                    Combo_Nac.Text = reader["FechNacimiento"].ToString();
+                    TxT_Domicilio.Text = reader.GetString(2);
+                    TxT_Mail.Text = reader.GetString(3);
+                    TxT_Phone.Text = reader.GetString(4);
+                }
+                TXTfill.Dispose(); reader.Close();
+               
             }
-            TXTfill.Dispose(); reader.Close();
+            catch (Exception)
+            {
+                MessageBox.Show("Verifique los datos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+
+
+            }
             conexion.Close();
         }
 
